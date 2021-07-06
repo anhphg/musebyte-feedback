@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #345066;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+	line-height: 1.6;
+}
+
+.container {
+	max-width: 650px;
+	margin: 1rem auto;
+	overflow: auto;
+	padding: 2rem;
+	border: 1px solid rgb(54, 74, 105);
+	border-radius: 5px;
+	background-color: white;
+}
+.header {
+	display: inline-flex;
+	max-width: 640px;
+	margin: 1rem auto;
+	overflow: auto;
+	padding: 1rem;
+}
+img{
+	max-width: 36%;
+	height: auto;
+}
+h1 {
+	color: rgb(37, 62, 80);
+	margin-top: 64px;
+	margin-left: 0px;
+	padding-left: 0px;
+	transform: translateX(-30px);
+	font-size: 60px;
+	font-family: 'Fredoka One', cursive;
+}
+h2 {
+	color: rgb(34, 78, 143);
+	font-size: 30px;
+	margin-top: 15px;
+}
+
+h3 {
+	margin-bottom: 10px;
+}
+
+img {
+	width: 100%;
+}
+
+.message {
+	text-align: center;
+	padding: 5px;
+	border: rgb(54, 104, 179) dashed 2px;
+	margin-top: 2rem;
+	border-radius: 2px;
+}
+
+.logo {
+	width: 300px;
+	display: block;
+	margin: auto;
+}
+
+.form-group {
+	margin: 1rem 0;
+}
+
+input[type='text'],
+select,
+textarea {
+	display: block;
+	width: 100%;
+	padding: 0.4rem;
+	font-size: 1.2rem;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.btn {
+	display: block;
+	width: 100%;
+	background: rgb(34, 46, 61);
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	margin-top: 1rem;
+	border-radius: 2px;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class= "header">
+                <img src="../static/logo.png" alt="MuseByte" class="logo" >
+            
+                <!-- <div style='margin-left:2px;margin-top:10px'> -->
+                <h1>MuseByte</h1> 
+            </div>
+            {% if message %}
+            <p class="message">{{ message | safe}}</p>
+            {% endif %}
+            
+            <form action ="/submit" method ="POST">
+                <div class ="form-group">
+                <h3> Can you tell us your profession? * </h3> <!-- originally dealer-->
+                <select name="profession">
+                    <option value="">Select Your main Profession</option>
+                    <option value="Casual Hobbyist">Casual Hobbyist</option>
+                    <option value="Music student">Music student</option>
+                    <option value="Arranger/Composer">Arranger/Composer</option>
+                    <option value="Music Educator"> Music Educator</option>
+                    <option value="Other musician with little music writing experience">Other musician with little music writing experience</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <h3> What do you mainly use this app for? *</h3>
+                    <select name="purpose">
+                        <option value="">Select your main purpose</option>
+                        <option value="Casual/ just checking out">Casual/ just checking out</option>
+                        <option value="Professional">Professional</option>
+                        <option value="Study">Study</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h3>Please rate the usability of this app for your intended purpose. 10 is the best rating.</h3>
+                    <input type="radio" name="usability" value ="1"/> 1
+                    <input type="radio" name="usability" value ="2"/> 2
+                    <input type="radio" name="usability" value ="3"/> 3
+                    <input type="radio" name="usability" value ="4"/> 4
+                    <input type="radio" name="usability" value ="5"/> 5
+                    <input type="radio" name="usability" value ="6"/> 6
+                    <input type="radio" name="usability" value ="7"/> 7
+                    <input type="radio" name="usability" value ="8"/> 8
+                    <input type="radio" name="usability" value ="9"/> 9
+                    <input type="radio" name="usability" value ="10" checked/> 10
+                </div>
+                <div class="form-group">
+                    <h3>Please rate how useful this app is as a quick memo of chords/melodies. 10 is the best rating.</h3>
+                    <input type="radio" name="quickmemo" value ="1"/> 1
+                    <input type="radio" name="quickmemo" value ="2"/> 2
+                    <input type="radio" name="quickmemo" value ="3"/> 3
+                    <input type="radio" name="quickmemo" value ="4"/> 4
+                    <input type="radio" name="quickmemo" value ="5"/> 5
+                    <input type="radio" name="quickmemo" value ="6"/> 6
+                    <input type="radio" name="quickmemo" value ="7"/> 7
+                    <input type="radio" name="quickmemo" value ="8"/> 8
+                    <input type="radio" name="quickmemo" value ="9"/> 9
+                    <input type="radio" name="quickmemo" value ="10" checked/> 10
+                </div>
+                <div class="form-group">
+                    <h3> Anything you would like to comment on your experience?</h3>
+                    <textarea
+                        name="comments"
+                        id=""
+                        cols="30"
+                        rows="10"
+                        placeholder="Tell us whatever you like or dislike about this app"
+                    ></textarea>
+                </div>
+                <input type="submit" value="Submit" class="btn"/>
+            </form>
+
+        </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
